@@ -15,4 +15,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tuple_b = tuple_b[:2]
     res = tuple(sum(item) for item in zip(tuple_a, tuple_b))
     return res
-
