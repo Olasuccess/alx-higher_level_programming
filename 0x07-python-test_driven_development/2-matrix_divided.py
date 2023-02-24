@@ -35,4 +35,3 @@ def matrix_divided(matrix, div):
         new.append(array)
         array = []
     return new
-

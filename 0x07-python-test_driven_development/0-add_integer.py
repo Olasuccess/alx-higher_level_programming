@@ -15,4 +15,3 @@ def add_integer(a, b=98):
     if isinstance(b, (int, float)) is False:
         raise TypeError('b must be an integer')
     return int(a + b)
-

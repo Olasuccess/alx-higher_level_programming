@@ -17,4 +17,3 @@ def print_square(size):
         raise TypeError('size must be >= 0')
     for row in range(size):
         print('#' * size)
-
