@@ -5,4 +5,4 @@ for i in range(122, 96, -1):
     else:
         num = i - 32
     print("{:s}".format(chr(num)), end="")
-    
+
