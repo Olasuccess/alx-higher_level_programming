@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 0-safe_print_list.py
 # Ibrahim Olawale
-<walesuccess02@gmail.com>
+< walesuccess02@gmail.com >
 
 
 def safe_print_list(my_list=[], x=0):
