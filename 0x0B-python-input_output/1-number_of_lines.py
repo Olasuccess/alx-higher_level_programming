@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-"""number_of_lines
+"""
+Line function
 """
 
 
 def number_of_lines(filename=""):
-    """Takes in str filename to read the number of lines
+    """number of lines from file
+    args:
+        filename: file to read
+    return:
+        number of lines
     """
-
-    with open(filename, encoding="utf-8") as readFile:
-        lines = 0
-        while True:
-            line = readFile.readline()
-            if not line:
-                break
-            lines += 1
-        return lines
+    line_num = 0
+    with open(filename, encoding="utf-8") as f:
+        for line in f:
+            line_num += 1
+    return line_num

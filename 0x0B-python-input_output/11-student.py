@@ -1,19 +1,20 @@
 #!/usr/bin/python3
-"""Student
+"""
+Class Module
 """
 
 
 class Student:
-    """Contains student data
+    """Student class
     """
 
     def __init__(self, first_name, last_name, age):
+        """initialize method"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self):
-        """Retrieves dictionary of Student
+        """retrieves a dictionary representation of student instance
         """
-
-        return self.__dict__
+        return vars(self)

@@ -1,21 +1,20 @@
 #!/usr/bin/python3
-"""read_lines
 """
-import os
+read method
+"""
 
 
 def read_lines(filename="", nb_lines=0):
-    """Takes in str filename to read, and n lines w/ int nb_lines
+    """read n lines of text file
+    args:
+        filename: file to read
+        nb_lines: n line
+    return:
+        na
     """
-
-
-    with open(filename, encoding="utf-8") as readFile:
-        lineNum = 0
-        while True:
-            line = readFile.readline()
-            lineNum += 1
-            print(line, end='')
-            if lineNum >= nb_lines and nb_lines > 0:
-                break 
-            if not line:
-                break
+    line_num = 0
+    with open(filename, encoding="utf-8") as f:
+        for line in f:
+            if line_num < nb_lines or not nb_lines or nb_lines < 0:
+                print(line, end="")
+            line_num += 1
