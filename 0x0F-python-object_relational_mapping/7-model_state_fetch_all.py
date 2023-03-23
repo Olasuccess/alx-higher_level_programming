@@ -33,4 +33,3 @@ if __name__ == "__main__":
 
     for instance in q:
         print("{}: {}".format(instance.id, instance.name))
-
