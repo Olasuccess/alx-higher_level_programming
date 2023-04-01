@@ -1,4 +1,3 @@
-<F7>#!/bin/bash
-# Get the response body for a given URL for 200 status code responses.
-curl -sL "$1"
-
+#!/bin/bash
+# Script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
+curl -s "$1" | wc -c
